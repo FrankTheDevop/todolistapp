@@ -6,6 +6,7 @@
     "node": ">=4"
   },
   "scripts": {
+    "precommit": "npm run lint",
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check"
@@ -27,6 +28,7 @@
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
+    "husky": "^0.14.3",
     "nsp": "^2.1.0"
   },
   "repository": {
